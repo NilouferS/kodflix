@@ -4,17 +4,34 @@
 
 img {
   width:100%;
-  
 }
+
 .Container {
-  display:flex;
+  display: flex;
 }
-.item
-{
-  flex:1;
+
+.item{
+  flex: 1;
+  border: white;
+  position: relative;
 }
+
+.overlay{
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: yellow;
+  opacity: .8;
+}
+
+.item:hover .overlay{
+  display: block;
+}
+
 @media only screen and (max-width: 600px) {
-   .Container{
-     flex-direction: column
-   };
+  .Container{
+    flex-direction: column
+  };
 }
