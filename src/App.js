@@ -23,17 +23,6 @@ function App() {
           <div className="item"><img src = {twlight} alt = 'Twlight'></img> </div>
           <div className="item"><img src = {fast}  alt = 'Fast and Furious'></img></div>
       </div>
-      <div className="Container">
-          <div className="item"><h1>Black Mirror</h1></div>
-          <div className="item"><h1>Death Note</h1></div> 
-          <div className="item"><h1>Breaking Bad</h1> </div> 
-      </div>
-      <div className="Container">
-          <div className="item"><h1>The Walking Dead </h1></div>
-          <div className="item"><h1>The Wire</h1> </div>
-          <div className="item"><h1>Games of Thrones</h1></div>
-      </div>
-        
       </header>
     </div>
      );
