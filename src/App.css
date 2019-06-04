@@ -3,5 +3,14 @@
 }
 
 img {
-  width:100% ;
+  width:100%;
+  
 }
+.Container {
+  display:flex;
+}
+.item
+{
+  flex:1;
+}
+
