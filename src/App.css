@@ -14,23 +14,26 @@ img {
   flex: 1;
   border: white;
   position: relative;
+  overflow: hidden;
+  border: 1px solid blue;
 }
 
 .overlay{
-  display: none;
+  transition: bottom ease 1s;
   position: absolute;
-  bottom: 0;
+  bottom: -100px;
   left: 0;
   width: 100%;
   background-color: yellow;
-  opacity: .8;
+  opacity: 0.6;
 }
 
 .item:hover .overlay{
-  display: block;
+  opacity: .6;
+  bottom: 0;
 }
 
-@media only screen and (max-width: 600px) {
+@media only nscreen and (max-width: 600px) {
   .Container{
     flex-direction: column
   };
