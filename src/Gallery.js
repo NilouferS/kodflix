@@ -1,25 +1,23 @@
 import React from 'react';
-import avenger from './images/avengers.jpg';
-import fast from './images/fast.jpg';
-import harry from './images/harry.jpg';
-import twlight from './images/twlight.jpg';
-import nemo from './images/nemo.jpg';
-import purge from './images/purge.jpg';
+import getMovies from './get-movie.js';
 import './App.css';
 import Movie from './Movie.js';
 
-export default function Gallery(){
+export default function Gallery() {
     return (
-            <div>
-                <div className="Container">
-                    <Movie id='purge' name='The Purge' logo={ purge } />  
-                    <Movie id='avenger' name='Avengers' logo={ avenger} />
-                    <Movie id='harry' name='Harry Potter' logo={ harry } />
-                    <Movie id='nemo' name='Finding Nemo' logo={ nemo } />
-                    <Movie id='twlight' name='Twlight' logo={ twlight} />
-                    <Movie id='fast' name='Fast and Furious' logo={ fast } />
-                </div>
+        <div>
+            <div className="Container">
+                {
+                    getMovies().map((movie) => (
+                        <Movie
+                            key={movie.id}
+                            id={movie.id}
+                            name={movie.name}
+                            logo={movie.logo} />
+                    ))
+                }
             </div>
-     );
+        </div>
+    );
 }
 /*id is the url link name*/
