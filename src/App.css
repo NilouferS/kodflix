@@ -7,12 +7,15 @@ img {
 }
 
 .Container {
-  display: flex;
+ /* display: flex;
+  flex-wrap: wrap;8*/
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
-.item{
-  flex: 1;
-  border: white;
+.item {
+  /*flex: 1;
+  flex-basis: 120px;*/
   position: relative;
   overflow: hidden;
   border: 1px solid blue;
@@ -33,8 +36,3 @@ img {
   bottom: 0;
 }
 
-@media only nscreen and (max-width: 600px) {
-  .Container{
-    flex-direction: column
-  };
-}

@@ -15,8 +15,6 @@ export default function Gallery(){
                     <Movie id='purge' name='The Purge' logo={ purge } />  
                     <Movie id='avenger' name='Avengers' logo={ avenger} />
                     <Movie id='harry' name='Harry Potter' logo={ harry } />
-                </div>
-                <div className="Container">
                     <Movie id='nemo' name='Finding Nemo' logo={ nemo } />
                     <Movie id='twlight' name='Twlight' logo={ twlight} />
                     <Movie id='fast' name='Fast and Furious' logo={ fast } />
