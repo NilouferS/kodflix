@@ -12,15 +12,16 @@ export default function Gallery(){
     return (
             <div>
                 <div className="Container">
-                    <Movie name='The Purge' logo={ purge } />
-                    <Movie name='Avengers' logo={ avenger} />
-                    <Movie name='Harry Potter' logo={ harry } />
+                    <Movie id='purge' name='The Purge' logo={ purge } />  
+                    <Movie id='avenger' name='Avengers' logo={ avenger} />
+                    <Movie id='harry' name='Harry Potter' logo={ harry } />
                 </div>
                 <div className="Container">
-                    <Movie name='Finding Nemo' logo={ nemo } />
-                    <Movie name='Twlight' logo={ twlight} />
-                    <Movie name='Fast and Furious' logo={ fast } />
+                    <Movie id='nemo' name='Finding Nemo' logo={ nemo } />
+                    <Movie id='twlight' name='Twlight' logo={ twlight} />
+                    <Movie id='fast' name='Fast and Furious' logo={ fast } />
                 </div>
             </div>
      );
 }
+/*id is the url link name*/
