@@ -13,7 +13,7 @@ export default class Details extends Component {
       this.setState({
         welcomeMessage: 'Coming Soon!'
       });
-    },3000);
+    }, 3000);
   }
 
   render() {
