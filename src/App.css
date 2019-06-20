@@ -8,11 +8,14 @@ img {
  
 }
 
+body{
+  background-color: black;
+}
+
 .Container {
  /* display: flex;
   flex-wrap: wrap;8*/
   display: grid;
-  background-color: black;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   /*grid-template-columns: 1fr 1fr 1fr;*/
   
@@ -23,16 +26,12 @@ img {
   flex-basis: 120px;*/
   position: relative;
   overflow: hidden;
-  
-  /* border: 1px solid blue; */
- 
-}
+  }
 
 .overlay{
  
   position: absolute;
   bottom: -100px;
-  /* left: 25px; */
   width: 100%;
   color:white;
   background-color: black;
