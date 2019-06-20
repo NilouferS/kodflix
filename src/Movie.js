@@ -9,6 +9,7 @@ export default function Movie(props) {
         <div className="overlay">
           <h1>{props.name}</h1>
         </div>
+        
     </Link>
     );
 }
