@@ -3,10 +3,19 @@ import getMovies from './get-movie.js';
 import './App.css';
 import Movie from './Movie.js';
 
-export default function Gallery() {
+export default class Gallery extends React.Component {
+    componentDidMount() {
+        fetch('/rest/shows')
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (myJson) {
+                console.log(myJson);
+            });
+    }
+    render() {
     return (
-        <div>
-            <div className="Container">
+        <div className="Container">
                 {
                     getMovies().map((movie) => (
                         <Movie
@@ -17,7 +26,8 @@ export default function Gallery() {
                     ))
                 }
             </div>
-        </div>
+       
     );
+ }
 }
 /*id is the url link name*/
