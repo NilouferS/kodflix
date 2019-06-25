@@ -8,7 +8,7 @@ function getShows() {
                  'chieftain who sends his Viking raiders east to the Baltic'+
                   'states and Russia, whose residents are as poor as the'+
                   ' Norsemen. Ragnar wants to head west, across the ocean,'+
-                  ' to discover new civilizations.' )
+                  ' to discover new civilization.' )
         },
         { 
             id: 'black', name: 'Black Book', 
