@@ -5,7 +5,7 @@ export default function Movie(props) {
     return(
 
     <Link to={`/${props.id}`} className="item">
-        <img src = {props.logo}  alt = 'The Purge'></img>
+        <img src={require(`./images/${props.id}.jpg`)}  alt={props.id}></img>
         <div className="overlay">
           <h1>{props.name}</h1>
         </div>
